@@ -1,38 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Chivo", sans-serif;
+}
 .App {
-  text-align: center;
+  width: 100%;
+  max-width: 360px;
+
+  margin: auto;
+  outline: 1px solid black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 21px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar img {
+  height: 2.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
+  border-top: 0.25px solid #d7d7d7;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 21px;
+}
+
+/* item card */
+.item-card {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-top: 0.25px solid #d7d7d7;
+}
+
+.item-card:nth-child(odd) {
+  background: #fffcf2;
+}
+.item-card-details {
+  padding: 21px 33px;
+}
+.item-card-details h1 {
+  color: #000;
+  font-family: Chivo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.item-card-details p {
+  color: #000;
+  font-family: Chivo;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 21px 0px;
+}
+.item-card-details h1 {
+  color: #000;
+  font-family: Chivo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.item-stats {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 33px;
+}
+
+.item-stats div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.item-stats div > span:first-child {
+  color: #000;
+  text-align: center;
+  font-family: Chivo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.item-stats div > span:nth-child(2) {
+  color: #000;
+  font-family: Chivo;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.item-card-menu {
+  border-left: 0.25px solid #d7d7d7;
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px;
+}
+.item-contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3px;
+}
+.item-contact span {
+  color: #000;
+  font-family: Chivo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  height: 20px;
+  width: auto;
+}
+
+.icon-container {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-colored {
+  color: #8d4337;
+}
+.icon-container span {
+  color: #8d4337;
+  font-family: Chivo;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
